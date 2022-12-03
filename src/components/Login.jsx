@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-
+import {Link} from "react-router-dom";
 function Login () {
   
   return (
@@ -21,16 +21,16 @@ function Login () {
                     <div class="p-2 bg-white rounded shadow-lg">
                       <h1 class="mb-2 text-center pt-2">Iniciar Sesion</h1>
                       </div>
-                      <form>
+                      <form >
                         <label class="font-500">Correo</label>
                         <input name="" class="form-control form-control-lg mb-3" type="email"/>
                         <label class="font-500">Contraseña</label>
                         <input name="" class="form-control form-control-lg" type="password"/>
                         <p class="m-0 py-4"><a href="" class="text-muted">Recuperar Contraseña?</a></p>
-                        <button class="btn btn-primary btn-lg w-100 shadow-lg">INICIAR</button>
+                        <button type = 'submit'class="btn btn-primary btn-lg w-100 shadow-lg">INICIAR</button>
                       </form>
                     <div class="text-center pt-4">
-                      <p class="m-0">No Tienes Una Cuenta? <a href="" class="text-dark font-weight-bold">Crear Una</a></p>
+                      <p class="m-0">No Tienes Una Cuenta? <Link to="/Registrar" class="text-dark font-weight-bold">Crear Una</Link></p>
                     </div>          
                      
 
